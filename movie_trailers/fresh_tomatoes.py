@@ -39,7 +39,7 @@ main_page_head = '''
         }
         .movie-tile {
             padding: 10px 10px 10px 10px;
-            background-color: blue;
+            background-color: #E6E6FA;
         }
         .movie-tile:hover {
             background-color: gray;
@@ -58,9 +58,7 @@ main_page_head = '''
             top: 0;
             background-color: white;
         }
-        .box-shadow--2dp {
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
-}
+
 
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -119,9 +117,7 @@ main_page_content = '''
       </div>
     </div>
     <div class="container-fluid">
-    <div class="row">
       {movie_tiles}
-    </div>
     </div>
   </body>
 </html>
@@ -130,26 +126,9 @@ main_page_content = '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-xs-6 col-md-4 clearfix movie-tile" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342" class="img-thumbnail img-responsive box-shadow--2dp">
-    <div>
-    <dl>
-    <h3 class="text-left" style="color:#404040">{movie_title} <small style="font-size:12px"> ({release_date}) </small></h3>
-    <div class="row">
-        <div class="col-xs-6">
-            <dt class="small text-left">Duration</dt>
-            <dd class="small text-left">{duration}min</dd>
-        </div>
-        <div class="col-xs-6">
-            <dt class="small text-right">Genre</dt>
-            <dd class="small text-right">{genre[0]}</dd>
-        </div>
-    </div>
-    <dt class="small text-left">Director</dt>
-    <dd class="small text-left">{director}</dd>
-    <dt class="small text-left">Storyline</dt>
-    <dd class="small text-left">{movie_storyline}</dd>
-    </div>
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+    <img src="{poster_image_url}" width="220" height="342">
+    <h2>{movie_title}</h2>
 </div>
 '''
 
