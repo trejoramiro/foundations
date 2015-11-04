@@ -1,3 +1,9 @@
+''' Binding movie data in an HTML page for rendering in browser.
+
+'''
+
+###Modified by Ramiro Trejo, 2015. 
+
 import webbrowser
 import os
 import re
@@ -39,7 +45,6 @@ main_page_head = '''
         }
         .movie-tile {
             padding: 10px 10px 10px 10px;
-            background-color: #E6E6FA;
         }
         .movie-tile:hover {
             background-color: gray;
@@ -129,6 +134,10 @@ movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
     <h2>{movie_title}</h2>
+    <h3>({release_date})</h3>
+    <h5>{duration}min</h5>
+    <h4>{director}</h4>
+    <h4>{genre}</h4>
 </div>
 '''
 
