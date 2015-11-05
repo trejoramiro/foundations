@@ -1,6 +1,6 @@
 # [movie_trailers](https://github.com/trejoramiro/foundations/tree/master/movie_trailers)
 
-movie_trailers takes my personal favorite movies and showcases each movie and its trailer on an html page, created by [Ramiro Trejo] (https://twitter.com/ramirotrejo1).
+movie_trailers takes my personal favorite movies and showcases each movie and its trailer on a html page. Created by [Ramiro Trejo] (https://twitter.com/ramirotrejo1).
 
 ## Quick start
 Several quick start options are available:
