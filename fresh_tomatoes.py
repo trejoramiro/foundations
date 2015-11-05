@@ -1,8 +1,8 @@
-''' Binding movie data in an HTML page for rendering in browser.
+""" Binding movie data in an HTML page for rendering in browser.
 
-'''
+"""
 
-###Modified by Ramiro Trejo, 2015. 
+# Modified by Ramiro Trejo, 2015.
 
 import webbrowser
 import os
@@ -158,8 +158,7 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id,
-            movie_storyline=movie.storyline,
+            trailer_youtube_id=movie.trailer_youtube_url,
             release_date=movie.date_released,
             director=movie.director,
             duration=movie.duration,

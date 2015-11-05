@@ -1,6 +1,6 @@
 # [movie_trailers](https://github.com/trejoramiro/foundations/tree/master/movie_trailers)
 
-movie_trailers takes my personal favorite movies and showcases them in an html page to access movie data, created by [Ramiro Trejo] (https://twitter.com/ramirotrejo1)
+movie_trailers takes my personal favorite movies and showcases each movie and its trailer on an html page, created by [Ramiro Trejo] (https://twitter.com/ramirotrejo1).
 
 ## Quick start
 Several quick start options are available:
@@ -12,9 +12,10 @@ Clone the repo: 'git clone https://github.com/trejoramiro/foundations.git'
 
 1. Python 2.x
 2. MacOS 10.2 or later already include various versions of Python.
-3. Runs Bootstrap (currently v3.3.5) through url link in html.
-4. If running on Windows: downloads available at https://www.python.org/downloads/windows/
-5. Supports following browsers:
+3. If running on Windows: Python downloads available at https://www.python.org/downloads/windows/
+4. To run, type in terminal: python entertainment_center.py
+5. Runs Bootstrap (currently v3.3.5) through url link in html.
+6. Bootstrap supports the following browsers:
     - Safari
     - Firefox
     - Chrome
@@ -26,15 +27,16 @@ Clone the repo: 'git clone https://github.com/trejoramiro/foundations.git'
 
 After downloading, you will find the following:
 
+```
 movie_trailers/
-|-- entertainment_center.py
-|-- media.py
-|-- media.pyc
-|-- fresh_tomatoes.py
-|-- fresh_tomatoes.pyc
-|-- fresh_tomatoes.html
-|-- README.md
-
+  |-- entertainment_center.py
+  |-- media.py
+  |-- media.pyc
+  |-- fresh_tomatoes.py
+  |-- fresh_tomatoes.pyc
+  |-- fresh_tomatoes.html
+  |-- README.md
+```
 ## Creators
 
 **Ramiro Trejo**

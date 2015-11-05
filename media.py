@@ -1,15 +1,15 @@
-''' Class for movie info.
+""" Class for movie info.
 
     GNU General Public Licence.
+"""
 
-'''
-
-###Created by Ramiro Trejo, 2015. 
+# Created by Ramiro Trejo, 2015.
 
 import webbrowser
 
-class Movie():
-    ''' This class provides a way to store movie related information
+
+class Movie:
+    """ This class provides a way to store movie related information
 
     Attributes:
         title: A string indicating title of movie.
@@ -20,25 +20,31 @@ class Movie():
         genre: A string of the movie genre.
         duration: A string of the lenght of movie.
 
-        '''
+        """
 
 
-     #constructor of Movie class
-    def __init__(self, movie_title, trailer_youtube, poster_image, date_released, director, genre, time_duration):
-        ''' Inits Movie object with movie data.
+# constructor of Movie class
+    def __init__(self,
+                 movie_title,
+                 trailer_youtube,
+                 poster_image,
+                 date_released,
+                 director,
+                 genre,
+                 time_duration):
+        """ Inits Movie object with movie data. """
 
-        '''
-         self.title = movie_title
-         self.trailer_youtube_url = trailer_youtube
-         self.poster_image_url = poster_image
-         self.date_released = date_released
-         self.director = director
-         self.genre = genre_list
-         self.duration = time_duration
+        self.title = movie_title
+        self.trailer_youtube_url = trailer_youtube
+        self.poster_image_url = poster_image
+        self.date_released = date_released
+        self.director = director
+        self.genre = genre
+        self.duration = time_duration
 
-     #opens trailer in the browser
+# opens movie trailer in browser
     def show_trailer(self):
-        ''' Opens the movie trailer in browser.
+        """ Opens the movie trailer in browser.
 
         Args:
             self.
@@ -49,5 +55,5 @@ class Movie():
         Raises:
             None.
 
-        '''
-         webbrowser.open(self.trailer_youtube_url)
+        """
+        webbrowser.open(self.trailer_youtube_url)
